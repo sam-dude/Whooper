@@ -1,13 +1,17 @@
 import LogNdSearch from '../LogoNdSearch/LogNdSearch';
 import styles from './navbar.module.css'
+import { HiOutlineHome, HiOutlineUserGroup } from "react-icons/hi";
+import {TbMessageCircle} from "react-icons/tb"
+import {BiFace} from 'react-icons/bi'
+import {LuFolderHeart} from 'react-icons/lu'
 
 function Navbar() {
   const navs = [
-    {id: 1, name: 'Home', url: '/'},
-    {id: 2, name: 'Collaborate', url: '#'},
-    {id: 3, name: 'Messages', url: '#', num: 2},
-    {id: 4, name: 'Subscriptions', url: '/subsciptions'},
-    {id: 5, name: 'You', url: '#'},
+    {id: 1, name: 'Home', url: '/', icon: <HiOutlineHome/>},
+    {id: 2, name: 'Collaborate', url: '#', icon: <HiOutlineUserGroup />},
+    {id: 3, name: 'Messages', url: '#', num: 2, icon: <TbMessageCircle />},
+    {id: 4, name: 'Subscriptions', url: '/subsciptions', icon: <LuFolderHeart/>},
+    {id: 5, name: 'You', url: '#', icon: <BiFace/>},
   ];
 
   const cat = [
@@ -24,7 +28,7 @@ function Navbar() {
           <nav className={styles.navlinks}>
             {
               navs.map(nav => (
-                <a href={nav.url} key={nav.id} className={styles.nav }>{nav.name}</a>
+                <a href={nav.url} key={nav.id} className={styles.nav }><div className={styles.icon}>{nav.icon}</div>{nav.name}</a>
               ))
             }
           </nav>

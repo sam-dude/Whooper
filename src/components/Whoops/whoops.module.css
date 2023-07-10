@@ -2,6 +2,9 @@
     display: flex;
     gap: 5px;
     flex-direction: column;
+    height: calc(100vh - 73px);
+    overflow-y: scroll;
+    padding-bottom: 30px;
 }
 .whoop{
     background-color: #362E45;
