@@ -2,16 +2,18 @@
     display: flex;
     gap: 5px;
     flex-direction: column;
-    height: calc(100vh - 73px);
+    height: calc(100vh - 85px);
     overflow-y: scroll;
-    padding-bottom: 30px;
+    
 }
 .whoop{
     background-color: #362E45;
     border-radius: 30px;
     padding: 30px;
 }
-
+.whoop:last-of-type{
+    margin-bottom: 30px;
+}
 .user{
     display: flex;
     align-items: center;

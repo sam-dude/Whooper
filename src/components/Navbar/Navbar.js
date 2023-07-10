@@ -11,7 +11,7 @@ function Navbar() {
     {id: 2, name: 'Collaborate', url: '#', icon: <HiOutlineUserGroup />},
     {id: 3, name: 'Messages', url: '#', num: 2, icon: <TbMessageCircle />},
     {id: 4, name: 'Subscriptions', url: '/subsciptions', icon: <LuFolderHeart/>},
-    {id: 5, name: 'You', url: '#', icon: <BiFace/>},
+    {id: 5, name: 'You', url: '/you', icon: <BiFace/>},
   ];
 
   const cat = [
