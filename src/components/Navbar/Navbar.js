@@ -20,7 +20,7 @@ function Navbar() {
   ]
   return (
     <div className={styles.container}>
-      <LogNdSearch />
+      <div className={styles.log}><LogNdSearch /></div>
 
       <div className={styles.others }>
         <div className={styles.general}>

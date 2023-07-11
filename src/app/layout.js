@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         
           {children}
-        <RigthSideBar />
+        <div className='sidebar'><RigthSideBar /></div>
       </body>
     </html>
   )
