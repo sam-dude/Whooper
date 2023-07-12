@@ -32,7 +32,7 @@ export default function RigthSideBar() {
             <div className={styles.persons}>
                 {
                     people.map(person => (
-                        <div className={styles.person}>
+                        <div className={styles.person} key={person.id}>
                             <div className={styles.dp}>{person.name.charAt(0)}</div>
                             <div className={styles.info}>
                                 <div className={styles.name}>{person.name}</div>
