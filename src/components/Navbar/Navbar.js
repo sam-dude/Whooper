@@ -28,7 +28,7 @@ function Navbar() {
           <nav className={styles.navlinks}>
             {
               navs.map(nav => (
-                <a href={nav.url} key={nav.id} className={styles.nav }><div className={styles.icon}>{nav.icon}</div>{nav.name}</a>
+                <a href={nav.url} key={nav.id} className={styles.nav }><span className={styles.icon}>{nav.icon}</span><span className={styles.name}>{nav.name}</span></a>
               ))
             }
           </nav>

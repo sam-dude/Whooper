@@ -3,6 +3,8 @@
     padding: 20px;
     font-size: 18px;
     padding-top: 30px;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .userDetails{
@@ -30,7 +32,6 @@
 .imgContainer{
     height: 200px;
     width: 100%;
-    
 }
 
 .img{
@@ -111,6 +112,26 @@
     color: #fff;
 }
 
+@media only screen and (max-width: 768px){
+    .userDetails{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .item:first-of-type{
+        width: 100%;
+    }
+    .item:last-of-type{
+        width: 100%;
+    }
+    .tracker{
+        padding: 30px;
+    }
+    .userDetails{
+        overflow-y: scroll;
+    }
+    
+}
+
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
 
@@ -133,5 +154,6 @@
 @media only screen and (max-width: 1024px){
     .container{
         width: 100%;
+        height: calc(100vh - 62px);
     }
 }
