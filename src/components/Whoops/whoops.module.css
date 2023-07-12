@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
     height: calc(100vh - 85px);
     overflow-y: scroll;
@@ -63,4 +63,24 @@
     gap: 10px;
     color: #FE754D;
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .msgContainer{
+        padding-left: 0;
+    }
+    .hashes{
+        flex-wrap: wrap;
+    }
+    .time{
+        font-size: 16px;
+    }
+    .whoop{
+        padding: 20px;
+    }
+} 
+@media only screen and (max-width: 1024px) {
+    .container{
+        height: calc(100vh - 147px);
+    }
 }
