@@ -53,7 +53,7 @@ export default function page() {
             
             {user.map(e => (
                 <div className={styles.item} key={e.id}>
-                    <div className={styles.imgContainer}><Image className={styles.img} src={e.user.profilePicture}/></div>
+                    <div className={styles.imgContainer}><Image className={styles.img} alt="profile picture" src={e.user.profilePicture}/></div>
                     <div className={styles.names}>
                         <div className={styles.name}>{e.user.name}</div>
                         <div className={styles.hotlink}>@{e.user.hotLink}</div>

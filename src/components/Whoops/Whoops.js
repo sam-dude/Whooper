@@ -14,7 +14,7 @@ function Whoops() {
       },
       message: 'We are bootstapping @annepto a social individuals with successful people. If you are a mentor comment 🖐 and make it more🎤 useful society. Follow us on FB.',
       hashes: ['startup', 'programming', 'business', 'bootstrap', 'community'],
-      time: 'Just now'
+      time: 1
     },
     {
       id: 2, 
@@ -61,7 +61,7 @@ function Whoops() {
               </div>
 
               <div className={styles.time}>
-                {whoop.time === 'Just now' ? 'Just now' : whoop.time + ' mins ago'}
+                {whoop.time === 1 ? 'Just now' : whoop.time + ' mins ago'}
               </div>
 
             </div>

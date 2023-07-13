@@ -4,6 +4,7 @@ import { HiOutlineHome, HiOutlineUserGroup } from "react-icons/hi";
 import {TbMessageCircle} from "react-icons/tb"
 import {BiFace} from 'react-icons/bi'
 import {LuFolderHeart} from 'react-icons/lu'
+import { NavLink } from '../NavLink/NavLink';
 
 function Navbar() {
   const navs = [
@@ -28,7 +29,8 @@ function Navbar() {
           <nav className={styles.navlinks}>
             {
               navs.map(nav => (
-                <a href={nav.url} key={nav.id} className={styles.nav }><span className={styles.icon}>{nav.icon}</span><span className={styles.name}>{nav.name}</span></a>
+                
+                <NavLink link={nav.url} icon={nav.icon} text={nav.name} key={nav.id} />
               ))
             }
           </nav>
