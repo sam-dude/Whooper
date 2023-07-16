@@ -1,0 +1,15 @@
+#container{
+    width: 60%;
+    padding: 20px;
+    font-size: 18px;
+    padding-top: 30px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 1024px){
+    #container{
+        width: 100%;
+        height: calc(100vh - 62px);
+    }
+}

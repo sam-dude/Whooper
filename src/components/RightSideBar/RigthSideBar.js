@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './rightsidebar.module.css';
+import Communities from '../Communities/Communities';
 
 export default function RigthSideBar() {
     const communities = [
@@ -18,14 +19,7 @@ export default function RigthSideBar() {
   return (
     <div className={styles.container}>
         {/* communities */}
-        <div className={styles.communities}>
-            <div className={styles.title}>TOP COMMUNITIES</div>
-            <div className={styles.comms}>
-                {communities.map(comm => (
-                    <div className={styles.comm} key={comm.id}><div className={styles.commIcon}>{comm.name.charAt(0)}</div>{comm.name}</div>
-                ))}
-            </div>
-        </div>
+        <Communities communities={communities}/>
         {/* people */}
         <div className={styles.people}>
             <div className={styles.title}>SUGGESTED PEOPLE</div>

@@ -9,7 +9,7 @@ import { NavLink } from '../NavLink/NavLink';
 function Navbar() {
   const navs = [
     {id: 1, name: 'Home', url: '/', icon: <HiOutlineHome/>},
-    {id: 2, name: 'Collaborate', url: '#', icon: <HiOutlineUserGroup />},
+    {id: 2, name: 'Communities', url: '/communities', icon: <HiOutlineUserGroup />},
     {id: 3, name: 'Messages', url: '#', num: 2, icon: <TbMessageCircle />},
     {id: 4, name: 'Subscriptions', url: '/subsciptions', icon: <LuFolderHeart/>},
     {id: 5, name: 'You', url: '/you', icon: <BiFace/>},
