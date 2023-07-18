@@ -1,0 +1,44 @@
+.title{
+    font-size: 16px;
+    color: #8B8996;
+    padding: 10px 20px;
+}
+
+.comms, .persons{
+    display: flex;
+    flex-direction: column;
+}
+
+.comm, .person{
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: .2s;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.commIcon{
+    background-color: #FE754D;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-weight: 600;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp{
+    border-radius: 50%;
+    width: 40px;
+    background-color: #FE754D;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotlink{
+    font-size: 18px;
+    font-weight: 400;
+    color: #8B8996;
+}
