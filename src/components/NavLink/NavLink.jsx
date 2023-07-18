@@ -8,7 +8,7 @@ import Link, { LinkProps } from "next/link";
 export function NavLink({link, text, icon}) {
   const { pathname } = useRouter();
   const isActive = pathname === link;
-  console.log(pathname);
+  
   return(
     <Link 
       href={link}
