@@ -28,7 +28,7 @@ export default function Login() {
                 <h3 className='py-4 min-w-fit'>Sign in with one of the providers</h3>
                 <button onClick={handleGoogleSignUp} className='bg-white text-gray-700 w-full rounded-2xl flex align-middle p-4 gap-4'>
                     <FcGoogle className='text-2xl '/>
-                    Sign in with Google
+                    Continue with Google
                 </button>
             </div>
         </div>

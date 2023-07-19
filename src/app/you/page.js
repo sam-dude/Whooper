@@ -1,11 +1,13 @@
-import React from 'react'
+"use client"
+import React, { useContext } from 'react'
 import styles from './page.module.css';
 import Samdp from '../../../public/sam.jpg'
 import Image from 'next/image';
+import { userAuthContext } from '../context/UserAuthContext';
 
 export default function page() {
-
-    const user = [
+    const { user } = useContext(userAuthContext)
+    const userInfo = [
         {
           id: 1, 
           user: {
@@ -19,6 +21,7 @@ export default function page() {
         },
         
       ]
+    console.log(user);
   return (
     <div className={styles.container}>
         <div className={styles.userDetails}>
@@ -51,22 +54,22 @@ export default function page() {
                 
             </div>
             
-            {user.map(e => (
-                <div className={styles.item} key={e.id}>
-                    <div className={styles.imgContainer}><Image className={styles.img} alt="profile picture" src={e.user.profilePicture}/></div>
+
+                <div className={styles.item} >
+                    <div className={styles.imgContainer}><Image className={styles.img} alt="profile picture" src={user.photoURL} width={400}/></div>
                     <div className={styles.names}>
-                        <div className={styles.name}>{e.user.name}</div>
-                        <div className={styles.hotlink}>@{e.user.hotLink}</div>
+                        <div className={styles.name}>{user.displayName}</div>
+                        <div className={styles.hotlink}>@{user.email}</div>
                     </div>
                     <div className={styles.influence}>
-                        <div className={styles.posts}>{e.posts} <div className={styles.title}>posts</div></div>
-                        <div className={styles.followers}>{e.follows}<div className={styles.title}>followers</div></div>
-                        <div className={styles.following}>{e.following}<div className={styles.title}>following</div></div>
+                        <div className={styles.posts}> <div className={styles.title}>posts</div></div>
+                        <div className={styles.followers}><div className={styles.title}>followers</div></div>
+                        <div className={styles.following}><div className={styles.title}>following</div></div>
                     </div>
                    
                     <div className={styles.edit}>Change Info</div>
                 </div>
-            ))}
+        
             
         </div>
 
